@@ -1,9 +1,9 @@
 
 const musicas = [
 
-"musica/musica02.mp3",
+"musica/musica_02.mp3",
 "musica/musica2.mp3",
-"musica/musica05.mp3",
+"musica/musica_05.mp3",
 "musica/musica4.mp3",
 "musica/musica5.mp3",
 "musica/musica6.mp3",
@@ -22,11 +22,15 @@ const musicas = [
 
 let indice = 0
 const player = document.getElementById("player")
+player.volume = 0.8
 
 function tocarMusica(){
 
 player.src = musicas[indice]
-player.play()
+
+player.play().catch(() => {
+console.log("Autoplay bloqueado pelo navegador")
+})
 
 indice++
 
