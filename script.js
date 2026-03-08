@@ -9,7 +9,14 @@ const musicas = [
 "musica/musica6.mp3",
 "musica/musica7.mp3",
 "musica/musica8.mp3",
-"musica/musica9.mp3"
+"musica/musica9.mp3",
+"musica/musica_01.mp3",
+"musica/musica_02.mp3",
+"musica/musica_03.mp3",
+"musica/musica_04.mp3",
+"musica/musica_05.mp3",
+"musica/musica_06.mp3",
+"musica/musica_07.mp3"
 
 ]
 

@@ -4,12 +4,12 @@ font-family:'Segoe UI', sans-serif;
 
 background: linear-gradient(
 100deg,
-#f0d9fb,
-#dba8f8,
-#cc75ff
+#ffe7e7,
+#ffcaca,
+#ff5353
 );
 
-color:#1e293b;
+color:#252339;
 text-align:center;
 }
 
@@ -28,14 +28,31 @@ font-size:50px;
 margin:20px 0 10px 0;
 }
 
+h2::after{
+content:"";
+display:block;
+width:125px;
+height: 4px;
+background:#252339;
+margin:10px auto 30px auto;
+border-radius:10px;
+}
+
 button{
 background:white;
 color:#ff4d6d;
 border:none;
-padding:15px 30px;
+padding:15px 35px;
 font-size:18px;
-border-radius:30px;
+border-radius:40px;
 cursor:pointer;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
 }
 
 #conteudo{
@@ -54,6 +71,10 @@ line-height:1.6;
 overflow:hidden;
 width:100%;
 margin-top:40px;
+padding:20px 0;
+height:300px;
+display:flex;
+align-items:center;
 }
 
 .track{
@@ -82,12 +103,11 @@ transform:translateX(-50%);
 }
 
 
-.hearts{
+.heart{
 position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
+color:rgb(255, 55, 55);
+font-size:20px;
+animation:subir 6s linear infinite;
 pointer-events:none;
 }
 
@@ -116,4 +136,24 @@ opacity:0;
 display:none;
 padding:20px 40px;
 margin-top:0;
+}
+
+.track img{
+height:250px;
+width:auto;
+border-radius:40px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+transition:transform 0.5s ease;
+}
+
+.track img:hover{
+transform:scale(1.05);
+}
+
+html{
+overflow-y: scroll;
+}
+
+body{
+overflow-x: hidden;
 }
